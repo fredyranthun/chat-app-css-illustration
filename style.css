@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  background-color:hsl(270, 20%, 96%);
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  position: absolute;
+  left: -140px;
+  width: 560px;
+  height: 700px;
+  background: -webkit-linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:    -moz-linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:         linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0px 0px 280px 280px;
+  z-index: -3;
+}
+.phone{
+  width: 250px;
+  height: 505px;
+  border: 10px solid hsl(0, 0%, 100%);
+  border-radius: 25px;
+  position: relative;
+  top: 145px;
+  left: 360px;
+  z-index: -2;
+  background-color: hsl(270, 20%, 96%);
+
+}
+.whitespace{
+  width: 130px;
+  height: 20px;
+  border-radius: 0px 0px 15px 15px;
+  background-color:  hsl(0, 0%, 100%);
+  margin: auto;
+}
+.header{
+  z-index: -1;
+  position: relative;
+  top: -20px;
+  background: -webkit-linear-gradient(to left ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:    -moz-linear-gradient(to left ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:         linear-gradient(to left ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 15px 15px 5px 5px;
+  height: 65px;
+  color: hsl(270, 20%, 96%);
+  padding: 30px 15px 0px 15px;
+}
+.header img{
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  display: inline-block;
+  margin: 0px 7px;
+}
+.header > .head{
+  display: inline-block;
+  vertical-align: top;
+}
+.header > .head h1{
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.header > .head h2{
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 2;
+  width: 140px;
+}
+.header > .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.chat{
+  background-color: hsl(270, 20%, 96%);
+}
+.chat img{
+  height: 40px;
+  border-radius: 7px;
+  margin: 8px 4px;
+  display: inline-block;
+
+}
+.chat > .message{
+  width: 130px;
+  font-size: 7px;
+  border-radius: 7px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 7px;
+  margin: 4px 8px;
+}
+.received{
+  background-color: hsl(206, 6%, 79%);
+  color: hsl(276, 55%, 52%);
+  float: left;
+}
+.sent{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  float: right;
+}
+.price{
+  background-color: hsl(206, 6%, 79%);
+  color: hsl(276, 55%, 52%);
+  float: left;
+  background: -webkit-linear-gradient(to right ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:    -moz-linear-gradient(to right ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  background:         linear-gradient(to right ,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color:  hsl(0, 0%, 100%);
+}
+.price h1{
+  float: left;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 2.6;
+}
+.price h2{
+  float: right;
+  font-weight: 700;
+  font-size: 10px;
+}
+.dot{
+  float: left;
+  height: 12px;
+  width: 12px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 50%;
+  margin: 1px 10px 0px 0px;
+}
+.pictures{
+  display: block;
+  width: 144px;
+  height: 56px;
+  float: right;
+}
+.typespace{
+  background-color: hsl(0, 0%, 100%);
+  float: left;
+  width: 215px;
+  height: 34px;
+  border-radius: 17px;
+  margin: 12px 8px;
+}
+.typemessage{
+  float: left;
+  line-height: 34px;
+  font-size: 8px;
+  color: hsl(270, 7%, 64%);
+  margin-left: 20px;
+}
+.send{
+  float: right;
+  height: 25px;
+  width:25px;
+  border-radius: 50%;
+  background-color: hsl(271, 36%, 24%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  line-height:25px;
+  margin: 4px 5px;
+}
+.content{
+  display: block;
+  width: 450px;
+  position: absolute;
+  top: 315px;
+  left: 735px;
+}
+.content h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+.content p{
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+  color: hsl(270, 7%, 64%);
+  padding-top: 25px;
+}
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  top: 800px;
+
+}
+.attribution a {
+  color: hsl(271, 36%, 24%);
+}
+
+@media screen and (max-width: 899px) {
+  .phone{
+    position: static;
+    margin: 50px auto;
+    z-index: -2;
+  }
+  .container {
+    top:-200px;
+    left: -350px;
+    z-index: -3;
+  }
+  .content{
+    position: static;
+    margin: auto;
+    text-align: center;
+    width: 320px;
+  }
+  .attribution {
+    top: 1000px;
+  }
+  .header{
+    z-index: -1;
+}
